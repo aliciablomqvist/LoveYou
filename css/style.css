@@ -43,9 +43,6 @@ body {
     left: -50%;
     position: relative;
     display: inline-block;
-    margin-bottom: 10px;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .button {
@@ -60,7 +57,7 @@ body {
     cursor: pointer;
     font-family: 'Brush Script MT', cursive;
     border-radius: 5px;
-    width: 150px;
+  
 }
 
 .button:hover {
@@ -86,5 +83,45 @@ body {
 @keyframes fall {
     to {
         transform: translateY(100vh);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .textbox {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .title, .text {
+        font-size: 30px; 
+    }
+
+    .img {
+        width: 150px; 
+        height: 150px; 
+        margin: 0 auto;
+    }
+
+    .button {
+        font-size: 16px; 
+        padding: 8px 16px; 
+        width: auto; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 20px; 
+    }
+
+    .img {
+        width: 100px; 
+        height: 100px;
+        margin: 0 auto;
     }
 }
